@@ -1,0 +1,64 @@
+/* basicos */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(240, 143, 105);
+}
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "s1 s1 s1 s1 s1 s2";
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+footer{
+    padding: 10px;
+    background-color: #2e2e2e;
+}
+/* posicionamiento */
+.titulo{
+    text-align: center;
+}
+
+.imagen_del_logo{
+    grid-area: s1;
+}
+.seccion_clasificaciones{
+    grid-area: s2;
+}
+
+
+/* estilos */
+.seccion_clasificaciones{
+    grid-area: s2;
+    padding: 20px;
+    background-color: #ffcc00; /* Amarillo */
+    border: 5px solid #2e2e2e;
+}
+.seccion_tipo_b{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "nombre_clasificacion imgen_clasificacion";
+}
+.seccion_tipo_b p{
+    grid-area: nombre_clasificacion;
+    font-size: 1.5rem;
+    color: #2e2e2e;
+    text-decoration: none;
+}
+.seccion_tipo_b a {
+    text-decoration: none !important; /* Quitar subrayado de enlaces */
+}
+.seccion_tipo_b img{
+    grid-area: imgen_clasificacion;
+}
+img{
+    max-width: 50px;
+}
+/* letras */
+
