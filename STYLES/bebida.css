@@ -12,7 +12,7 @@ body{
 }
 
 .ajuste {
-    max-width: 100%; /* O ajusta según sea necesario */
+    max-width: 100%;
     height: 100%;
 }
 .decoracion{
@@ -42,14 +42,12 @@ h1{
     font-weight: bold;
     color: #009688;
 }
-/* Estilos generales para el artículo */
 .ingredientes {
     padding: 15px;
     margin-bottom: 20px;
     height: 500px;
 }
 
-/* Estilos para el encabezado h3 */
 .contenedor-ingredientes-categoria h3 {
     color: #333;
     font-size: 1.5em;
@@ -71,7 +69,6 @@ h1{
 .ingredientes li:last-child {
     color: #009688; 
 }
-
 
 /*  */
 .imagen-container {
@@ -132,7 +129,7 @@ h3 {
 .marco-pasos {
     width: 85%;
     height: 300px;
-    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+    overflow-y: auto;
     padding: 40px 20px;
     background-color: #fff;
     border: 1px solid #ddd;
