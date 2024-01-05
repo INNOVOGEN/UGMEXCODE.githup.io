@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    /* font-family: Arial, sans-serif; */
+    background-color: rgb(213, 215, 218);
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: Helvetica,Arial;
+}
+p{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: Helvetica,Arial;
+}
+/* Fondo de pantalla con título */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('https://revistacitylife.com/wp-content/uploads/2018/03/bebidas-suaves.jpg') center/cover no-repeat; /* Reemplaza 'tu_imagen.jpg' con la ruta de tu imagen */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10%; /* Ajusta según sea necesario */
+} 
+
+.hero-title {
+    color: #fff;
+    font-size: 2.6em;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Espacio vacío del 20% */
+.empty-space {
+    height: 20vh;
+}
+
+/* Contenedor de la sección con márgenes laterales */
+.drink-section {
+    margin: 0 150px;
+}
+
+/* Estilo del artículo */
+.article-link {
+    text-decoration: none; /* Quitar el subrayado de enlace */
+    color: inherit; /* Heredar el color del texto del contenedor padre (en este caso, div) */
+}
+
+.drink-section div{
+    margin-bottom: 20px;
+}
+article {
+    height: 170px;
+    background-color: #f2f2f2; /* Color de fondo para resaltar */
+    overflow: hidden; /* Para evitar que los márgenes se sumen a la altura */
+    border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+}
+
+/* Estilo de la imagen dentro del artículo */
+article img {
+    width: 287px;
+    height: 100%;
+    object-fit: cover; /* Para asegurar que la imagen cubra todo el contenedor */
+    border-radius: 10px 10px 0 0; /*Esquinas redondeadas arriba*/
+}
+.main-information-container{
+    padding: 0 20px;
+}
+
+/* Estilo del texto dentro del artículo */
+article div {
+    padding: 10px;
+}
