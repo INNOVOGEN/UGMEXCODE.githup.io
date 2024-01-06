@@ -1,5 +1,5 @@
 body{
-    margin: 1vh;
+    margin: 0;
     background-color: #fff;
 }
 
@@ -12,7 +12,7 @@ body{
 }
 
 .ajuste {
-    max-width: 100%;
+    max-width: 100%; /* O ajusta según sea necesario */
     height: 100%;
 }
 .decoracion{
@@ -42,12 +42,14 @@ h1{
     font-weight: bold;
     color: #009688;
 }
+/* Estilos generales para el artículo */
 .ingredientes {
     padding: 15px;
     margin-bottom: 20px;
     height: 500px;
 }
 
+/* Estilos para el encabezado h3 */
 .contenedor-ingredientes-categoria h3 {
     color: #333;
     font-size: 1.5em;
@@ -69,6 +71,7 @@ h1{
 .ingredientes li:last-child {
     color: #009688; 
 }
+
 
 /*  */
 .imagen-container {
@@ -129,7 +132,7 @@ h3 {
 .marco-pasos {
     width: 85%;
     height: 300px;
-    overflow-y: auto;
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
     padding: 40px 20px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -187,11 +190,17 @@ form {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
     font-family: Arial, sans-serif;
+}
+.contenedor-grande-form{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.divisor-de-columnas-form {
+    display: flex;
+    flex-direction: column; /* Esto hace que los elementos estén en una columna */
+    align-items: center; /* Esto centra los elementos horizontalmente dentro del contenedor */
 }
 
 .titulo {
@@ -212,16 +221,19 @@ textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 2px solid #ddd;
+    /* border-radius: 5px; */
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 #nombre,
 #apellido {
-    width: 48%; /* Ancho del 48% para dejar espacio entre los elementos */
-    margin-bottom: 15px;
+    width: 80%; /* Ancho del 48% para dejar espacio entre los elementos */
+    margin-bottom: 32px;
+}
+#sugerencia{
+    width: 80%;
 }
 
 input[type="submit"] {
@@ -234,6 +246,29 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #00796b;
 }
+/* estrellas calificadoras */
+.estrellas-calificadoras{
+    display: flex;
+    justify-content: center;
+}
+.rating-container {
+    font-size: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.star:hover,
+.star.active,
+.star.active .star {
+    color: #ffd700;
+}
+/* footer */
 footer {
     background-color: #333;
     color: #fff;
