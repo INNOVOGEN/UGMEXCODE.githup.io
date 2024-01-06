@@ -78,12 +78,22 @@
         Lo puse solo para que se vea mejor-->
         <form action="#" method="post">
             <h1 class="titulo">Recetas UGMEX</h1>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-
-            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
-
-            <textarea id="sugerencia" name="sugerencia" placeholder="Danos tu sugerencia" rows="4" required></textarea>
-
+            <div class="estrellas-calificadoras">
+                <div class="rating-container" id="rating-container">
+                    <span class="star" onclick="rateRecipe(1)">★</span>
+                    <span class="star" onclick="rateRecipe(2)">★</span>
+                    <span class="star" onclick="rateRecipe(3)">★</span>
+                    <span class="star" onclick="rateRecipe(4)">★</span>
+                    <span class="star" onclick="rateRecipe(5)">★</span>
+                </div>
+            </div>
+            <div class="contenedor-grande-form">
+                <div class="divisor-de-columnas-form">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                </div>
+                <textarea id="sugerencia" name="sugerencia" placeholder="Danos tu sugerencia" rows="4" required></textarea>
+            </div>
             <input type="submit" value="Enviar">
         </form>
     </main>
@@ -92,5 +102,17 @@
             <p>&copy; UGMEX code - Todos los derechos reservados</p>
         </div>
     </footer>
+    
+    <script>
+        function rateRecipe(rating) {    
+            // Restablecer clases activas
+            document.querySelectorAll('.star').forEach(function (star, index) {
+                star.classList.remove('active');
+                if (index < rating) {
+                    star.classList.add('active');
+                }
+            });
+        }
+    </script>
 </body>
 </html>
