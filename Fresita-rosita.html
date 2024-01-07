@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebida</title>
+    <link rel="stylesheet" href="bebida.css">
+    <script src="JS/diapositivas.js"></script>
+</head>
+<body>
+    <main>
+        <section class="informacion">
+            <div class="ajuste">
+                <h1>Fresita rosita</h1>
+
+                <div class="decoracion"></div>
+
+                <section class="contenedor-ingredientes-categoria">
+                    <article class="ingredientes">
+                        <h3>Ingredientes</h3>
+                        <ul>
+                            <li>bolas de helado</li>
+                            <li>fresa picada</li>
+                            <li>saborizante de fresa</li>
+                            <li>leche condensada</li>
+                            <li>1 lata de leche evaporada</li>
+                        </ul>
+                    </article>
+                    <div class="categoria">
+                        <h3>Categoría</h3>
+                        <p>MALTEADA</p>
+                    </div>
+                </section>
+            </div>
+            <div class="imagen-conteiner elemento-derecha">
+                <img src="IMAGES/Fresita rosita.PNG" alt="bebida terminada">
+            </div>
+            
+        </section>
+        <section>
+            <div class="contenedor-presentacion">
+                <div class="ajuste-presentacion">
+                    <p class="encabezado">DESCUBRE LA RECETA</p><!-- encabezado -->
+                    <p class="descripcion-bebida"><!-- bienvenida -->
+                        BEBIDA ES INSPIRADA EN ROSITA FRESITA; UN PERSONAJE QUE SALIÓ EN EL 86 ÚNICAMENTE 
+                        PARA INVITACIONES, Y ASÍ CON EL PASO DEL TIEMPO SE HIZO PERSONAJE DE CARICATURA
+                    </p>
+                </div>
+            </div>
+            <div class="contenedor-receta">
+                <h3>Sigue el paso a paso de la receta</h3>
+                <div class="marco-pasos">
+                    <div class="pasos">
+                        <div class="paso-imagen">
+                            <p><span>1. </span>En una licuadora se agrega las bolas de helado, fresa picada, 1/4 de leche condensada, 
+                                saborizante de fresa, 1 lata de leche evaporada </p>
+                            <img src="IMAGES/paso1.png" alt="imagen del paso">
+                        </div>
+                        <div class="paso-imagen">
+                            <p><span>2. </span>Mezcla todos los ingredientes por 3 minutos</p>
+                            <img src="https://img.freepik.com/fotos-premium/ilustracion-grafica-ondas-coloridas-horizontales-sobre-fondo-negro_665346-5711.jpg" alt="imagen del paso">
+                        </div>
+                        <div class="paso-imagen">
+                            <p><span>3. </span>Vierte la bebida en un vaso y agrega las bolitas de tapioca </p>
+                            <img src="IMAGES/paso3.jpg" alt="imagen del paso">
+                        </div>
+                        <div class="paso-imagen">
+                            <p><span>4. </span>Decora con crema batida, jarabe de fresa y chispas de fresa</p>
+                            <img src="IMAGES/paso3.jpg" alt="imagen del paso">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <form action="#" method="post">
+            <h1 class="titulo">Recetas UGMEX</h1>
+            <div class="estrellas-calificadoras">
+                <div class="rating-container" id="rating-container">
+                    <span class="star" onclick="rateRecipe(1)">★</span>
+                    <span class="star" onclick="rateRecipe(2)">★</span>
+                    <span class="star" onclick="rateRecipe(3)">★</span>
+                    <span class="star" onclick="rateRecipe(4)">★</span>
+                    <span class="star" onclick="rateRecipe(5)">★</span>
+                </div>
+            </div>
+            <div class="contenedor-grande-form">
+                <div class="divisor-de-columnas-form">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                </div>
+                <textarea id="sugerencia" name="sugerencia" placeholder="Danos tu sugerencia" rows="4" required></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <div class="contenedor-pie">
+            <p>&copy; UGMEX code - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    
+    <script>
+        function rateRecipe(rating) {    
+            // Restablecer clases activas
+            document.querySelectorAll('.star').forEach(function (star, index) {
+                star.classList.remove('active');
+                if (index < rating) {
+                    star.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
