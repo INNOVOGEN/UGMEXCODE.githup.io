@@ -71,10 +71,10 @@ article img {
 article div {
     padding: 10px;
 }
-article .imagen-pacman {
+/* article .imagen-pacman {
     width: auto; 
     height: 100%; 
     object-fit: contain;
     object-position: center; 
     border-radius: 10px 0 0 10px;
-}
+} */
