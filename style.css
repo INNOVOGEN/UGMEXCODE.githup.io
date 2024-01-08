@@ -147,3 +147,15 @@ footer a {
     color: #ff00ff; 
     text-shadow: 0px 0px 8px #ff00ff; 
 }
+/* controles */
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-moz-media-controls {
+    display: none !important;
+}
+
+video::--ms-media-controls {
+    display: none !important;
+}
